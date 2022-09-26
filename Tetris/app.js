@@ -113,6 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
             moveDown()
         }
     }
+
     document.addEventListener('keyup', control)
 
     //Move down function
@@ -123,9 +124,15 @@ document.addEventListener('DOMContentLoaded', () => {
         freeze()
     }
 
+    function delay(time) {
+        return new Promise(resolve => setTimeout(resolve, time));
+    }
+
     //Freeze function 
     function freeze() {
         if (current.some(index => squares[currentPosition + index + width].classList.contains('taken'))) {
+
+            //delay(1000)
             
             current.forEach(index => squares[currentPosition + index].classList.add('taken'))
 
