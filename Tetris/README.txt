@@ -22,3 +22,8 @@ not supposed to be there. I will try to fix that error when I can. I also notice
 the tetrominoes have collided with either the bottom or the bottom pieces, it doesn't move
 like any other game of Tetris. I will try to add a delay of some kind to ensure that part
 works.
+
+Update (9/27/2022 7:40 CST): I have added a reset button to reset the game, and I have
+also added a bonus whenever someone scores a "Tetris" (which is where one clears 4 lines),
+they would get 100 points instead of 40 points. I have also added some instructions on
+how to play the game.
